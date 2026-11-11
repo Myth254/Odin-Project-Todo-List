@@ -4,13 +4,13 @@ A browser-based todo list for organizing tasks into projects. Create tasks with 
 
 ## Preview
 
-![Todo List application showing projects and tasks](<screenshot/Screenshot From 2026-11-11 17-49-38.png>)
+![Todo List application showing projects and tasks](<screenshot/todo.png>)
 
 ## Features
 
 - Create and switch between projects
 - Add, edit, and delete tasks
-- Set a task description, due date, priority, and notes
+- Set a task description, due date, priority, and notesS
 - Mark tasks as complete or incomplete
 - Save projects and tasks in browser `localStorage` so they persist between visits
 
