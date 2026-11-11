@@ -3,25 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do App</title>
+    <title>Todo List</title>
 </head>
 <body>
-    <div class="sidebar">
-        <h1>Todo</h1>
-        <button id="createProjectBtn">Create Project</button>
-        <div id="projectList">
+    <div id="app">
+        <aside>
+            <div class="project-form">
+                <input type="text" name="createProject" id="createProjectValue" placeholder="Enter project name">
+                <button id="createProjectBtn">Create Project</button>
+            </div>
+            <ul id="project-list"></ul>
+        </aside>
+        <main>
+            <header class="content-header">
+                <h1 id="current-project-name"></h1>
+                <button id="add-todo-btn">+ New Todo</button>
+            </header>
+            <dialog id="todoModal">
+                <form action="#" id="todo-form">
+                    <div class="modal-header">
+                        <h2>New Todo</h2>
+                        <button type="button" id="closeModalBtn" aria-label="Close todo form">&times;</button>
+                    </div>
 
-        </div>
-    </div>
+                    <div>
+                        <label for="todoTitle">Title</label>
+                        <input type="text" name="todoTitle" id="todoTitle" required>
+                    </div>
 
-    <div id="contentContainer">
-        <div id="header">
-            <img src="images/avatar.png" alt="">
-            <span>User</span>
-        </div>
-        <div id="content">
+                    <div>
+                        <label for="todoDesc">Description</label>
+                        <input type="text" name="todoDesc" id="todoDesc">
+                    </div>
+                    
+                    <div>
+                        <label for="dueDate">Due Date</label>
+                        <input type="date" name="dueDate" id="dueDate">
+                    </div>
+                    
+                    <div>
+                        <label for="todoPriority">Priority</label>
+                        <select name="todoPriority" id="todoPriority">
+                            <option value="low">Low</option>
+                            <option value="medium">Medium</option>
+                            <option value="high">High</option>
+                        </select>
+                    </div>
 
-        </div>
+                    <div>
+                        <label for="todoNotes">Notes</label>
+                        <input type="text" name="todoNotes" id="todoNotes">
+                    </div>
+
+                    <button type="submit" id="submitBtn">Add todo</button>
+                </form>
+            </dialog>
+            <ul id="todo-list"></ul>
+        </main>
     </div>
 </body>
 </html>
