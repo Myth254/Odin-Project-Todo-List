@@ -1,4 +1,5 @@
 {
+  "homepage": "https://github.io",
   "name": "odin-project-todo-list",
   "version": "1.0.0",
   "description": "",
@@ -6,7 +7,7 @@
   "scripts": {
     "build": "webpack",
     "dev": "webpack serve",
-    "deploy": "git subtree push --prefix dist origin gh-pages"
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -19,9 +20,9 @@
   "bugs": {
     "url": "https://github.com/Myth254/Odin-Project-Todo-List/issues"
   },
-  "homepage": "https://github.com/Myth254/Odin-Project-Todo-List#readme",
   "devDependencies": {
     "css-loader": "^7.1.4",
+    "gh-pages": "^6.3.0",
     "html-loader": "^5.1.0",
     "html-webpack-plugin": "^5.6.7",
     "style-loader": "^4.0.0",
